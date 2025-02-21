@@ -1,0 +1,155 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+/* Títulos e texto */
+h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Palavras */
+#word-display {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4CAF50;
+}
+
+/* Inputs e botões */
+input[type="text"] {
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #66bb6a;
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagens de resultado */
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#remaining-attempts {
+    color: #e53935;
+}
+
+#tried-letters {
+    font-style: italic;
+    color: #616161;
+}
+
+/* Transições */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Telas de Vitória e Game Over */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.message {
+    background: #333;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.message h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.overlay button {
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #45a049;
+}
+
+

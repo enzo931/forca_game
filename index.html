@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="game-container">
+        <h1>Jogo da Forca</h1>
+        <p id="word-display"></p>
+        <p>Tentativas restantes: <span id="remaining-attempts"></span></p>
+        <p>Letras tentadas: <span id="tried-letters"></span></p>
+        <input type="text" id="letter-input" maxlength="1" placeholder="Digite uma letra" autofocus>
+        <button onclick="guessLetter()">Chutar</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="overlay" id="win-overlay">
+        <div class="message">
+            <h2>Você Venceu!</h2>
+            <p>A palavra era: <span id="win-word"></span></p>
+            <button onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="lose-overlay">
+        <div class="message">
+            <h2>Game Over!</h2>
+            <p>A palavra era: <span id="lose-word"></span></p>
+            <button onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
