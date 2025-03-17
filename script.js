@@ -28,8 +28,43 @@ const words = [
     'floresta', 'gato', 'hora', 'iniciar', 'juntar', 'kilograma', 'lembrar', 'multiplicar', 'nome',
     'ocupar', 'pegar', 'qualidade', 'racao', 'saber', 'tarefa', 'utilizar', 'viver', 'wikipedia',
     'zelar', 'azar', 'branco', 'desafio', 'eco', 'foco', 'grafo', 'halo', 'identidade', 'jantar',
-    'ponto', 'saber', 'teoria', 'urso', 'vivo', 'xadrez', 'yoga', 'zap', 'arrumar', 'brincadeira'
+    'ponto', 'saber', 'teoria', 'urso', 'vivo', 'xadrez', 'yoga', 'zap', 'arrumar', 'brincadeira',
+    // Novas palavras adicionadas:
+    'leão', 'raposa', 'coruja', 'lontra', 'pavão', 'touro', 'cavalo', 'canguru', 'rinoceronte', 'camaleão', 
+    'lêmure', 'flamingo', 'panda', 'papagaio', 'avestruz', 'dromedário', 'águia', 'arara', 'caranguejo', 
+    'tartaruga', 'salamandra', 'morcego', 'jacutinga', 'guaxinim', 'tamanduá', 'tatu', 'porco-espinho', 
+    'pelicano', 'canário', 'grilo', 'borboleta', 'louva-a-deus', 'escorpião', 'golfinho', 'tubarão', 'orca', 
+    'estrela-do-mar', 'lobo-marinho', 'pinguim', 'árvore', 'arbusto', 'sequoia', 'carvalho', 'pinheiro', 
+    'cedro', 'ipê', 'baobá', 'floresta', 'savana', 'tundra', 'pradaria', 'desfiladeiro', 'caverna', 'vulcão', 
+    'colina', 'penhasco', 'cachoeira', 'lagoa', 'enseada', 'manguezal', 'pântano', 'dunas', 'geyser', 'coral', 
+    'baía', 'arquipélago', 'península', 'ilhota', 'correnteza', 'nevoeiro', 'arco-íris', 'relâmpago', 'tempestade', 
+    'orvalho', 'garoa', 'neve', 'gelo', 'avalanche', 'granizo', 'cadeira', 'mesa', 'sofá', 'cama', 'armário', 
+    'guarda-roupa', 'prateleira', 'escrivaninha', 'relógio', 'espelho', 'luminária', 'cortina', 'tapete', 'cobertor', 
+    'toalha', 'almofada', 'abajur', 'lustre', 'chuveiro', 'torneira', 'panela', 'frigideira', 'talher', 'prato', 
+    'copo', 'tigela', 'garrafa', 'jarra', 'balde', 'balança', 'liquidificador', 'aspirador', 'ventilador', 'aquecedor', 
+    'geladeira', 'fogão', 'forno', 'micro-ondas', 'lavadora', 'ferro', 'futebol', 'basquete', 'vôlei', 'handebol', 
+    'tênis', 'squash', 'badminton', 'beisebol', 'softbol', 'críquete', 'hóquei', 'rugby', 'boxe', 'judô', 'taekwondo', 
+    'luta livre', 'MMA', 'levantamento de peso', 'atletismo', 'maratona', 'triatlo', 'decatlo', 'pentatlo', 'salto em altura', 
+    'salto em distância', 'salto com vara', 'arremesso de peso', 'arremesso de disco', 'nado sincronizado', 'pólo aquático', 
+    'remo', 'surfe', 'skate', 'escalada', 'ciclismo', 'patinação', 'esqui', 'snowboard', 'computador', 'celular', 'tablet', 
+    'smartwatch', 'drone', 'impressora', 'scanner', 'câmera', 'projetor', 'monitor', 'teclado', 'mouse', 'joystick', 
+    'headset', 'microfone', 'alto-falante', 'amplificador', 'processador', 'placa-mãe', 'memória', 'HD', 'SSD', 'gabinete', 
+    'fonte', 'cooler', 'roteador', 'modem', 'switch', 'servidor', 'firewall', 'antivírus', 'software', 'hardware', 'aplicativo', 
+    'algoritmo', 'robótica', 'IA', 'machine learning', 'deep learning', 'automação', 'engenheiro', 'médico', 'professor', 
+    'advogado', 'arquiteto', 'designer', 'programador', 'analista', 'enfermeiro', 'veterinário', 'piloto', 'astronauta', 
+    'mecânico', 'eletricista', 'encanador', 'pedreiro', 'carpinteiro', 'pintor', 'marceneiro', 'bombeiro', 'policial', 
+    'jornalista', 'escritor', 'artista', 'músico', 'dançarino', 'diretor', 'cinegrafista', 'fotógrafo', 'psicólogo', 
+    'terapeuta', 'contador', 'economista', 'administrador', 'publicitário', 'chef', 'agricultor', 'biólogo', 'químico', 
+    'físico', 'cidade', 'vila', 'metrópole', 'bairro', 'avenida', 'rua', 'beco', 'praça', 'parque', 'rodovia', 'aeroporto', 
+    'estação', 'porto', 'cais', 'marina', 'mercado', 'feira', 'shopping', 'cinema', 'teatro', 'estádio', 'ginásio', 
+    'museu', 'galeria', 'biblioteca', 'escola', 'faculdade', 'universidade', 'hospital', 'clínica', 'farmácia', 'igreja', 
+    'templo', 'mesquita', 'sinagoga', 'castelo', 'palácio', 'mansão', 'torre', 'música', 'pintura', 'escultura', 'dança', 
+    'poesia', 'romance', 'história', 'geografia', 'matemática', 'física', 'química', 'biologia', 'filosofia', 'sociologia', 
+    'psicologia', 'economia', 'política', 'religião', 'cultura', 'tradição', 'festival', 'festa', 'celebração', 'feriado', 
+    'aniversário', 'casamento', 'nascimento', 'funeral', 'viagem', 'turismo', 'aventura', 'descoberta', 'exploração', 
+    'criatividade', 'inovação', 'progresso', 'futuro', 'memória', 'sonho', 'fantasia', 'realidade', 'ficção'
 ];
+
 
 let chosenWord = words[Math.floor(Math.random() * words.length)];
 let displayWord = chosenWord.split('').map(() => '_').join(' ');
